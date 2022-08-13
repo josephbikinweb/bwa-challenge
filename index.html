@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resto-Git</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+
+            <!-- Brand -->
+            <a class="navbar-brand mx-auto" href="#">
+              <img src="./assets/images/icons/Home.svg" class="mx-auto" />
+              <span>Resto</span>
+            </a>
+
+            <!-- Search Button -->
+            <form class="d-flex" role="search">
+              <div class="input-group">
+                <button class="btn btn-search" type="submit">
+                  <img
+                    src="./assets/images/icons/Search.svg"
+                    class="search-img"
+                  />
+                </button>
+                <input
+                  class="form-control me-2 input-search"
+                  type="search"
+                  placeholder="Search your favorite food"
+                  aria-label="Search"
+                />
+              </div>
+            </form>
+
+            <button type="button" class="btn btn-lightBlue">Log in</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END OF NAVBAR -->
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+            >
+            <!-- Item 1 -->
+                <div class="carousel-item active">
+                    <div class="carousel-inner">
+                      <div class="carousel-img">
+                        <div class="card carousel-card">
+                            <div class="card-body">
+                                <p class="card-text card-muted card-star">
+                                    <img src="./assets/images/icons/star 1.svg" class="gold-star"/>
+                                    <img src="./assets/images/icons/star 1.svg"class="gold-star"/>
+                                    <img src="./assets/images/icons/star 1.svg"class="gold-star"/>
+                                    <img src="./assets/images/icons/star 1.svg"class="gold-star"/>
+                                    <img src="./assets/images/icons/star 1.svg"class="gold-star"/>
+                                    <span class="gold-text">5.0</span> (5.2K+)
+                                </p>
+                                <h5 class="card-title">Restaurant Padang</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    IDR 49.999 - IDR 560.000
+                                </h6>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                <p class="card-text card-muted">
+                                    <img src="./assets/images/icons/Location.svg"/>
+                                    Padang, Indonesia
+                                </p>
+                                <button class="btn btn-cream">Make Reservation ></button>
+                                <p class="card-text">
+                                    <img src="./assets/images/icons/Info Square.png" class="info-img"/>
+                                    No extra cost
+                                </p>
+                            </div>
+                        </div>
+                        <img src="./assets/images/image1-1.png" class="carousel-img-main" />
+                      </div>
+                        
+                    </div>
+                    <div class="carousel-preview">
+                          <img src="./assets/images/image1-2.png"/>
+                    </div>
+                </div>
+                
+
+                <!-- Item 2 -->
+                <div class="carousel-item">
+                    <div class="carousel-inner">
+                      <div class="carousel-img">
+                        <div class="card carousel-card">
+                            <div class="card-body">
+                                <p class="card-text card-muted card-star">
+                                    <img src="./assets/images/icons/star 1.svg" class="gold-star"/>
+                                    <img src="./assets/images/icons/star 1.svg"class="gold-star"/>
+                                    <img src="./assets/images/icons/star 1.svg"class="gold-star"/>
+                                    <img src="./assets/images/icons/star 1.svg"class="gold-star"/>
+                                    <img src="./assets/images/icons/star 1.svg"class="gold-star"/>
+                                    <span class="gold-text">5.0</span> (5.2K+)
+                                </p>
+                                <h5 class="card-title">Padang Restaurant</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    IDR 99.999 - IDR 560.000
+                                </h6>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                <p class="card-text card-muted">
+                                    <img src="./assets/images/icons/Location.svg"/>
+                                    Jakarta, Indonesia
+                                </p>
+                                <button class="btn btn-cream">Make Reservation ></button>
+                                <p class="card-text">
+                                    <img src="./assets/images/icons/Info Square.png" class="info-img"/>
+                                    No extra cost
+                                </p>
+                            </div>
+                        </div>
+                          <img src="./assets/images/image 1-2.png" class="carousel-img-main" />
+                      </div>
+                    </div>
+                    <div class="carousel-preview">
+                          <img src="./assets/images/image1-1.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- Section 2 - BENEFIT -->
+    <Section class="benefit" id="benefit">
+      <div class="container">
+        <div class="row">
+          <h4 class="section-title">Special Benefit For You</h4>
+          <h1 class="section-subtitle">Why Should Choose Us</h1>
+        </div>
+        <div class="row">
+          <div class="card benefit-card">
+            <div class="card-body benefit-card-body">
+              <div class="benefit-img mt-1">
+                <img src="./assets/images/icons/Discount.png" alt="">
+              </div>
+              <h5 class="card-title benefit-card-title">Extra Discounts</h5>
+              <p class="card-text benefit-card-text">Get your special discount by using our reservation</p>
+            </div>
+            <button class="btn btn-benefit">
+              <a href="#" >View Details ></a>
+            </button>
+          </div>
+          <div class="card benefit-card">
+            <div class="card-body benefit-card-body">
+              <div class="benefit-img mt-1">
+                <img src="./assets/images/icons/fork.png" alt="">
+              </div>
+              <h5 class="card-title benefit-card-title">Come and Eat</h5>
+              <p class="card-text benefit-card-text">Get your own table quickly & without waiting in line</p>
+            </div>
+            <button class="btn btn-benefit">
+              <a href="#" >View Details ></a>
+            </button>
+          </div>
+          <div class="card benefit-card">
+            <div class="card-body benefit-card-body">
+              <div class="benefit-img mt-1">
+                <img src="./assets/images/icons/bag.png" alt="">
+              </div>
+              <h5 class="card-title benefit-card-title">No Extra Fee</h5>
+              <p class="card-text benefit-card-text">Get tax free if you want to order food and make a reservation</p>
+            </div>
+            <button class="btn btn-benefit">
+              <a href="#" >View Details ></a>
+            </button>
+          </div>
+          <div class="card benefit-card">
+            <div class="card-body benefit-card-body">
+              <div class="benefit-img mt-1">
+                <img src="./assets/images/icons/stars.png" alt="">
+              </div>
+              <h5 class="card-title benefit-card-title">Guaranteed Cleanliness</h5>
+              <p class="card-text benefit-card-text">We ensure the cleanliness of the place as well as the food</p>
+            </div>
+            <button class="btn btn-benefit">
+              <a href="#" >View Details ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </Section>
+    <!-- END OF Section 2 - BENEFIT -->
+
+    <!-- Section 3 FEATURED -->
+    <Section id="featured" class="featured">
+      <div class="container mt-5 container-featured">
+        <div class="row">
+          <div class="featured-card col-4">
+            <h4 class="section-title">Top 3 Featured Restaurant</h4>
+            <h1 class="section-subtitle">Most Popular Restaurants</h1>
+            <p class="section-info">The best restaurant in our opinion is how much customers like it in terms of place , price, comfort, and of course the taste of the food itself.</p>
+            <button class="btn btn-featured">
+              <a href="#">View All Restaurant ></a>
+            </button>
+          </div>
+          <div class="featured-card col-2">
+            <img src="./assets/images/image 2-1.png"> 
+            <div class="card-info">
+              <div class="featured-info">
+                <p class="card-text">
+                  <img src="./assets/images/icons/star 1.svg" class="gold-star"/>
+                  <span class="gold-text">5.0</span> (7.6K+)
+                </p>
+                <h5 class="info-title">Bind Balorant</h5>
+                <p class="info-text">
+                    <img src="./assets/images/icons/Location.svg"/>
+                    Jakarta, Indonesia
+                </p>
+              </div>
+              <button class="btn btn-info">
+                <a href="#"> 
+                  <img src="./assets/images/icons/arrow-right.svg" alt="">  
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="featured-card col-2">
+            <img src="./assets/images/image 2-22.png">
+            <div class="card-info">
+              <div class="featured-info">
+                <p class="card-text">
+                  <img src="./assets/images/icons/star 1.svg" class="gold-star"/>
+                  <span class="gold-text">5.0</span> (7.6K+)
+                </p>
+                <h5 class="info-title">Bind Balorant</h5>
+                <p class="info-text">
+                    <img src="./assets/images/icons/Location.svg"/>
+                    Jakarta, Indonesia
+                </p>
+              </div>
+              <button class="btn btn-info">
+                <a href="#"> 
+                  <img src="./assets/images/icons/arrow-right.svg" alt="">  
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="featured-card col-2">
+            <img src="./assets/images/image 2-33.png">
+            <div class="card-info">
+              <div class="featured-info">
+                <p class="card-text">
+                  <img src="./assets/images/icons/star 1.svg" class="gold-star"/>
+                  <span class="gold-text">5.0</span> (7.6K+)
+                </p>
+                <h5 class="info-title">Bind Balorant</h5>
+                <p class="info-text">
+                    <img src="./assets/images/icons/Location.svg"/>
+                    Jakarta, Indonesia
+                </p>
+              </div>
+              <button class="btn btn-info">
+                <a href="#"> 
+                  <img src="./assets/images/icons/arrow-right.svg" alt="">  
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+    <!-- END OF Section 3 FEATURED -->
+
+    <!-- Section 4 GALLERY -->
+    <Section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="gallery-row">
+            <div class="title-left">
+              <h4 class="section-title">Restaurant based by city</h4>
+              <h1 class="section-subtitle">Restaurants Near You</h1>
+            </div>
+            <div class="title-right">
+              <div class="btn-group">
+                <button class="btn btn-dropdown btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./assets/images/icons/Location.svg"/>
+                  Jakarta, Indonesia
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CARD GALLERY-->
+        <div class="row gallery-card">
+          <div class="card card-gallery">
+            <img src="./assets/images/image 3-1.png">
+            <div class="card-info gallery-info">
+              <div class="featured-info">
+                <p class="card-text">
+                  <img src="./assets/images/icons/star 1.svg" class="gold-star"/>
+                  <span class="gold-text">5.0</span> (6.6K+)
+                </p>
+                <h5 class="info-title">Batavia Restaurant</h5>
+                <p class="info-text">
+                    IDR 29.000 - IDR 259.999
+                </p>
+              </div>
+              <button class="btn btn-info">
+                <a href="#"> 
+                  <img src="./assets/images/icons/arrow-right.svg" alt="">  
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="card card-gallery">
+            <img src="./assets/images/image 3-2.png">
+            <div class="card-info gallery-info">
+              <div class="featured-info">
+                <p class="card-text">
+                  <img src="./assets/images/icons/star 1.svg" class="gold-star"/>
+                  <span class="gold-text">5.0</span> (3.6K+)
+                </p>
+                <h5 class="info-title">Split Ascent Restaurant</h5>
+                <p class="info-text">
+                    IDR 49.000 - IDR 560.000
+                </p>
+              </div>
+              <button class="btn btn-info">
+                <a href="#"> 
+                  <img src="./assets/images/icons/arrow-right.svg" alt="">  
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="card card-gallery">
+            <img src="./assets/images/image 3-3.png">
+            <div class="card-info gallery-info">
+              <div class="featured-info">
+                <p class="card-text">
+                  <img src="./assets/images/icons/star 1.svg" class="gold-star"/>
+                  <span class="gold-text">5.0</span> (11K+)
+                </p>
+                <h5 class="info-title">Daza Fracture Restaurant</h5>
+                <p class="info-text">
+                    IDR 29.999 - IDR 560.000
+                </p>
+              </div>
+              <button class="btn btn-info">
+                <a href="#"> 
+                  <img src="./assets/images/icons/arrow-right.svg" alt="">  
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-btn">
+          <button class="btn btn-featured">
+            <a href="#">View All Restaurant ></a>
+          </button>
+        </div>
+      </div>
+    </Section>
+    <!-- END OF Section 4 GALLERY -->
+
+    <!-- Section 5 PROFILE -->
+    <section class="profile">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 profile-left">
+            <div class="card-info-left">
+              <div class="row">
+                <div class="col-4">
+                  <img src="./assets/images/image 4-2.png">
+                </div>
+                <div class="col-8 card-info-text">
+                  <h4 class="info-text-title">Chef at restaurant</h4>
+                  <h3 class="info-text-subtitle">Pearl Dolphin</h3>
+                  <a href="#">View Details ></a>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/images/image 4-1.png">
+            <div class="card-info-right">
+              <div class="card-right-img">
+                <img src="./assets/images/icons/Shield Done.svg">
+              </div>
+              <div class="card-info-text">
+                <h3 class="info-text-title">12 Years</h3>
+                <h4 class="info-text-subtitle">Experience</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 profile-right">
+            <h4 class="section-title-profile">TOP 4 Expert Chefs</h4>
+            <h1 class="section-subtitle-profile">Expert Chef in Fuddy</h1>
+            <div class="container">
+              <div class="profile-exp">
+                <p class="profile-text">
+                    Pizza
+                </p>
+                <h5 class="profile-title">Phoenix Satcheup</h5>
+                <p class="profile-loc">
+                  <img src="./assets/images/icons/Location.svg"/>
+                  Jakarta, Indonesia
+                </p>
+                <div class="profile-details-link">
+                  <a href="#">Profile Details ></a>
+                </div>
+              </div>
+              <div class="profile-exp">
+                <p class="profile-text">
+                    Vegan
+                </p>
+                <h5 class="profile-title">Chamber Botfrag</h5>
+                <p class="profile-loc">
+                  <img src="./assets/images/icons/Location.svg"/>
+                  Bandung, Indonesia
+                </p>
+                <div class="profile-details-link">
+                  <a href="#">Profile Details ></a>
+                </div>
+              </div>
+              <div class="profile-exp">
+                <p class="profile-text">
+                    Roast Chicken
+                </p>
+                <h5 class="profile-title">Asep Vandal</h5>
+                <p class="profile-loc">
+                  <img src="./assets/images/icons/Location.svg"/>
+                  Sunda, Indonesia
+                </p>
+                <div class="profile-details-link">
+                  <a href="#">Profile Details ></a>
+                </div>
+              </div>
+              <div class="profile-exp">
+                <p class="profile-text">
+                    Beef Steak
+                </p>
+                <h5 class="profile-title">I Made invoker</h5>
+                <p class="profile-loc">
+                  <img src="./assets/images/icons/Location.svg"/>
+                  Bali, Indonesia
+                </p>
+                <div class="profile-details-link">
+                  <a href="#">Profile Details ></a>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-profile">
+              <a href="#">View All Chefs ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF Section 5 PROFILE -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+  </body>
+</html>
